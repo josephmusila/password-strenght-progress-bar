@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+       <div class="bar-wrap">
+            <div class="bar" id="bar">
+       </div>
+          
+        </div>
+
+            <input type="text" id="input"><br>
+          
+        <input type="submit" id="submit" max="100" min="0">
+     
+    </div>
+    <script>
+        function bar(){
+            const num=document.getElementById("input").value;
+            const win=document.getElementById("bar").clientWidth;
+          const bin=num.length ;
+          
+
+
+
+            if (bin==0){
+                alert("password too short");
+                document.getElementById("input").value='';
+            }else if (bin>1 && bin<8) {
+                console.log(bin)
+                document.getElementById("bar").style.width="150px";  
+                document.getElementById("bar").classList.add("fair");
+                document.getElementById("bar").innerHTML="password fair";
+
+            } 
+            else{
+                if  (bin > 8)
+                document.getElementById("bar").classList.add("fairr");
+                document.getElementById("bar").innerHTML="strong password!!";
+                document.getElementById("bar").style.width="300px";  
+             
+            }
+        }document.getElementById("submit").addEventListener("click",bar);
+
+    </script>
+</body>
+</html>

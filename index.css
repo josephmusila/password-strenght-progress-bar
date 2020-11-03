@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease;
+}
+
+.container{
+    border: 1px solid black;
+    background: #5f0be7;
+    margin: auto;
+    margin-top: auto;
+    height: auto;
+    width:400px;
+    display:  flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    transition: all 500ms ease;
+    align-items: center;
+    padding: 30px;
+}
+.bar-wrap{
+   
+    width: 300px;
+    background-color: rgb(234, 240, 229);
+    margin: 10px;
+    border: 2px solid white;
+    transition: all 500ms ease;
+    overflow: hidden;
+}
+.bar{
+    height: 20px;
+    width: 300px;
+    background-color: red;
+    transition: all 500ms ease;
+    overflow: hidden;
+    color: rgb(9, 14, 8);
+   
+}
+#progress{
+    height: 100%;
+    transition: all 500ms ease;
+   color: rgb(91, 224, 64);
+    border-right: 5px solid blue;
+}
+.fair{
+    background-color: blue;
+    color: white;
+}
+.fairr{
+    background-color: rgb(123, 255, 0);
+    color: white;
+}
